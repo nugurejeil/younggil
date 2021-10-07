@@ -153,11 +153,14 @@
     border-radius: 4px;
 }
 .form-certi .form-num-cont{
-    display: flex; 
+    display: none; 
     justify-content: space-between;
     margin-bottom:24px;
     align-items: center;
     border-bottom:1px solid #9E9E9E;
+}
+.form-certi .form-num-cont.on{
+    display: flex;
 }
 .form-num-cont .inp-num{
     border:none;
@@ -175,8 +178,11 @@
     color:transparent;
 }   
 .form-num-cont .num-util{
-    display: flex;
+    display: none;
     align-items: center;
+}
+.form-num-cont .num-util.on{
+    display: flex;
 }
 .form-num-cont .num-time{
     margin-left:6px;

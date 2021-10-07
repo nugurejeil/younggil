@@ -69,41 +69,48 @@
         // 전체 동의 버튼 이벤트
         const certBtn = document.querySelector('.cert-btn');
         const formListInp = document.querySelectorAll('.form-list input');
-        let arrCheck = [false, false];
+        const formNumCont = document.querySelector('.form-num-cont');
+        const phoneReq = document.querySelector('.phone-req');
+        const numUtil = document.querySelector('.num-util');
+
         certBtn.addEventListener('click', (event) => {
             event.currentTarget.classList.toggle('on');
             if (event.currentTarget.classList.contains('on')) {
                 formListInp.forEach((item) => {
                     item.checked = true;
+                    formNumCont.classList.add('on');
                 });
             } else {
                 formListInp.forEach((item) => {
                     item.checked = false;
+                    formNumCont.classList.remove('on');
                 });
             }
         });
 
+        // 동의 버튼 전체 체크 확인
         for (let i = 0; i < formListInp.length; i++) {
             formListInp[i].addEventListener('click', (event) => {
                 if (!event.currentTarget.checked) {
                     certBtn.classList.remove('on');
+                    formNumCont.classList.remove('on');
                 }
                 if (formListInp[0].checked && formListInp[1].checked) {
                     certBtn.classList.add('on');
+                    formNumCont.classList.add('on');
                 }
             });
         }
-        // formListInp.forEach((item) => {
-        //     item.addEventListener('click', (event) => {
-        //         if (!event.currentTarget.checked) {
-        //             certBtn.classList.remove('on');
-        //         }
-        //     });
-        // });
 
-
-
-
+        // 인증 요청 버튼 이벤트
+        phoneReq.addEventListener('click', (event) => {
+            const reqBtn = event.currentTarget;
+            reqBtn.classList.toggle('on');
+            if (reqBtn.classList.contains('on')) {
+                reqBtn.innerText = '재발송';
+                numUtil.classList.toggle('on');
+            }
+        });
     </script>
 </body>
 
