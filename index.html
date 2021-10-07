@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko" id="mainOrder">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객 주문페이지</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/slick/slick-theme.css">
+</head>
+
+<body>
+    <h1 class="screen-out">고객용 주문페이지</h1>
+    <header class="header-item">
+        <h2 class="screen-out">판매자와 상품정보</h2>
+        <section class="header-owner">
+            <article class="owner-info">
+                <h3 class="screen-out">판매자 정보</h3>
+                <img src="images/profile.png" alt="" class="img-owner">
+                <div class="owner-detail">
+                    <strong class="info-name">은파농장 &middot; 남영남</strong>
+                    <p class="info-hi  text-ellipsis">제주를 담은 고품질 &middot; 고당도 감귤만을 재배합니다.고당도 감귤만을 재배합니다.</p>
+                </div>
+            </article>
+            <h3 class="screen-out">판매자 상품 사진 리스트</h3>
+            <ul class="owner-list-item">
+                <li><img src="images/item1.png" alt=""></li>
+                <li><img src="images/item1.png" alt=""></li>
+                <li><img src="images/item1.png" alt=""></li>
+            </ul>
+            <article class="owner-item">
+                <h3 class="owner-tit text-ellipsis2">제주자연이 만든 고품질 &middot; 고당도 제주감귤 고당도 제주감귤 고당도 제주감귤</h3>
+                <strong class="owner-price">20,000원 <span>(감귤 5kg 기준)</span></strong>
+                <div class="owner-btns">
+                    <button type="button">공유하기</button>
+                    <button type="button">다량주문</button>
+                </div>
+            </article>
+            <article class="owner-other">
+                <h3 class="owner-items-other tit-section">판매 상품</h3>
+                <ul class="owner-list-other">
+                    <li>
+                        <img src="images/item_other1.png" alt="">
+                        <div class="other-info">
+                            <em class="text-ellipsis">고품질 제주 한라봉 고품질 제주 한라봉</em>
+                            <strong>9,999,999원</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/item_other1.png" alt="">
+                        <div class="other-info text-ellipsis">
+                            <em class="text-ellipsis">고품질 제주 한라봉</em>
+                            <strong>30,000원</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/item_other1.png" alt="">
+                        <div class="other-info text-ellipsis">
+                            <em class="text-ellipsis">고품질 제주 한라봉</em>
+                            <strong>30,000원</strong>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </header>
+    <main class="main-item">
+        <h2 class="screen-out">상품 정보 네비게이션과 상세 정보</h2>
+        <nav class="item-nav">
+            <button type="button" class="nav-info on">상품정보</button>
+            <button type="button" class="nav-buy">구매안내</button>
+            <button type="button" class="nav-policy">교환환불정책</button>
+        </nav>
+        <section class="item-info on">
+            <h3 class="tit-section">상품 정보</h3>
+            <img src="images/info.png" alt="상품 정보 상세" class="info-img">
+        </section>
+        <section class="item-buy">
+            <h3 class="tit-section">구매안내</h3>
+            <dl class="buy-info-list">
+                <div>
+                    <dt>배송비</dt>
+                    <dd>무료배송</dd>
+                </div>
+                <div>
+                    <dt>무료배송조건</dt>
+                    <dd>무료배송</dd>
+                </div>
+                <div>
+                    <dt>배송업체</dt>
+                    <dd>한진택배 (1588-0011)</dd>
+                </div>
+                <div>
+                    <dt>배송일</dt>
+                    <dd>
+                        <p>월~금요일 오전 10시 이전에 주문해 주시면 당일출고 됩니다.</p>
+                        <p>배송은 평일 기준으로 발송일로부터 평균 2~3일 소요됩니다.</p>
+                    </dd>
+                </div>
+                <div>
+                    <dt>주의사항</dt>
+                    <dd>
+                        <p>산지나 택배사의 사정에 따라 배송일이 변경될 수 있습니다.</p>
+                        <p>배송일이 변경되는 경우, 개별적으로 연락드립니다.</p>
+                    </dd>
+                </div>
+            </dl>
+            <h3 class="tit-section">상품정보제공고시</h3>
+            <dl class="buy-info-list">
+                <div>
+                    <dt>재품명</dt>
+                    <dd>초고당도 감귤 신품종 카라향 귤로향</dd>
+                </div>
+                <div>
+                    <dt>포장단위별 용량(중량), 수량, 크기</dt>
+                    <dd>
+                        2kg 중과 (13-17과), 2kg 중대과 (9~12과), 3kg 중과(18~25과), 3kg 중대과 (13~17과), 4.5kg 중과 (27~37과), 4.5kg
+                        중대과(19~26과)
+                    </dd>
+                </div>
+                <div>
+                    <dt>생산자 혹은 수입자</dt>
+                    <dd>임유경</dd>
+                </div>
+                <div>
+                    <dt>원산지 및 소재지</dt>
+                    <dd>제주도</dd>
+                </div>
+                <div>
+                    <dt>원재료 및 함량</dt>
+                    <dd>카라향 : 카라향100%(국내산)</dd>
+                </div>
+                <div>
+                    <dt>제조연월일, 유통기한 또는 품질유지기한</dt>
+                    <dd>수확 후 보내드립니다. 생물은 유통기한이 별도로 정해져있지 않습니다.</dd>
+                </div>
+                <div>
+                    <dt>보관방법</dt>
+                    <dd>장기관 보관시 팩이나 비닐에 개별포장하여 냉장보관해주세요.</dd>
+                </div>
+                <div>
+                    <dt>상담연락처</dt>
+                    <dd>010-0000-0000</dd>
+                </div>
+            </dl>
+        </section>
+        <section class="item-policy">
+            <h3 class="tit-section">교환환불정책</h3>
+            <article class="policy-info">
+                <strong class="info-tit">1. 받으신 상품에 문제가 있을 경우</strong>
+                <p class="info-txt">상품이 표시/광고와 다르거나 상품에 하자가 있는 경우, 상품 수령 즉시 사진을 찍어 고객센터로 문의해 주세요. 문제의 심각 정도, 상황에 따라
+                    재배송/일부 환불/전액 환불해드립니다.
+                </p>
+                <em class="info-sub">신선/냉장/냉동 식품</em>
+                <ul class="info-list">
+                    <li>상품 수령 후 1일(24시간) 이내 고객 정보(성함/연락처)와 하자를 확인할 수 있는 사진, 외포장재 사진을 카카오톡(컨비니 홈페이지 우측 하단 상담 아이콘)으로
+                        보내주세요.</li>
+                    <li>단순 변심 및 개인 기호, 주관적인 견해(맛이 없다, 입맛에 맞지 않다 등)로 취소/교환/ 반품/환불을 신청하는 경우 처리가 어려우니 양해 부탁드립니다.</li>
+                    <li>신선식품 특성 상 배송이 이미 시작된 경우에는 취소 할 수 없습니다.</li>
+                </ul>
+            </article>
+            <article class="policy-info">
+                <strong class="info-tit">2. 취소/교환/반품/환불이 어려운 경우</strong>
+                <p class="info-txt">다음에 해당하는 취소, 교환, 반품 및 환불 신청은 처리가 어려울 수 있으니 양해 부탁드립니다.</p>
+                <em class="info-sub">신선/냉장/냉동 식품</em>
+                <ul class="info-list">
+                    <li>신선식품 특성 상 배송이 이미 시작된 경우에는 취소 할 수 없습니다.</li>
+                    <li>소비자에게 책임 있는 사유로 상품이 멸실 또는 훼손된 경우 교환 및 반품이 어렵습니다.</li>
+                    <li>연락 두절, 주소지 불분명, 잘못된 개인정보 표기 등으로 인한 배송 지연 및 미수취 또는 그 과정에서 제품 손상이 발생한 경우 교환 및 반품이 어렵습니다.</li>
+                    <li>상품 수령 후 촬영을 하지 않고 섭취했거나 폐기한 경우 교환 및 반품이 어렵습니다.</li>
+                    <li>판매자와 교환/반품에 대한 협의 없이 임의로 폐기처분 또는 반송한 경우 교환 및 반품이 어렵습니다.</li>
+                </ul>
+            </article>
+        </section>
+        <button class="item-btn-buy">구매하기</button>
+    </main>
+    <div class="bg-shadow"></div>
+    <button type="button" class="info-more">더보기</button>
+    <div class="utils">
+        <button type="button" class="bg-icon_top">위로</button>
+        <button type="button" class="bg-icon_order">주문확인</button>
+    </div>
+
+    <article class="modal-order">
+        <section class="order-cont">
+            <h2 class="order-tit">배송지정보</h2>
+            <form action="" class="order-form">
+                <fieldset>
+                    <legend>보내는 분</legend>
+                    <input type="text" id="inpName" class="inp-common" placeholder="이름(필수)">
+                    <label for="inpName" class="screen-out">이름(필수)</label>
+                    <input type="tel" id="inpPhone" class="inp-common" placeholder="연락처(필수)">
+                    <label for="inpPhone" class="screen-out">연락처(필수)</label>
+                </fieldset>
+                <div class="form-cont">
+                    <fieldset class="form-receiver">
+                        <legend>
+                            받는 분 <span class="txt-number">&#40;&#43;<em>1</em>&#41;</span><button type="button"
+                                class="bg-icon_remove_item">받는분
+                                제거</button>
+                        </legend>
+                        <label for="selectItem" class="screen-out">상품 선택하기</label>
+                        <div class="sel-cont sel-item">
+                            <select id="selectItem" class="sel-common">
+                                <option selected disabled value="" class="init">상품 선택하기</option>
+                                <option value="">감귤 10kg</option>
+                                <option value="">감귤 20kg</option>
+                                <option value="">감귤 30kg</option>
+                            </select>
+                        </div>
+
+                        <div class="receiver-item">
+                            <label for="itemInfo">상품명 &#47; 999kg</label>
+                            <div class="item-order">
+                                <input type="text" id="itemInfo" value="99,000,000원" disabled>
+                                <div class="order-counter">
+                                    <button type="button" class="bg-icon_minus">빼기</button>
+                                    <em class="order-count">999</em>
+                                    <button type="button" class="bg-icon_plus">더하기</button>
+                                    <button type="button" class="bg-icon_init">초기화</button>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="text" id="inpNameReceiv" class="inp-common" placeholder="이름(필수)">
+                        <label for="inpNameReceiv" class="screen-out">이름(필수)</label>
+                        <input type="tel" id="inpPhoneReceiv" class="inp-common" placeholder="연락처(필수)">
+                        <label for="inpPhoneReceiv" class="screen-out">연락처(필수)</label>
+                        <input type="text" id="inpAddrReceiv" class="inp-common" placeholder="도로명, 건물명, 또는 지번으로 검색">
+                        <label for="inpAddrReceiv" class="screen-out">도로명, 건물명, 지번 주소</label>
+                        <input type="text" id="inpAddrDetail" class="inp-common" placeholder="상세주소">
+                        <label for="inpAddrDetail" class="screen-out">상세주소</label>
+                        <label for="selectMsg" class="screen-out">배송시 요청사항</label>
+                        <div class="sel-cont">
+                            <select id="selectMsg" class="sel-common">
+                                <option selected disabled>배송시 요청사항(선택)</option>
+                                <option value="">경비실에 부탁드려요</option>
+                                <option value="">집앞에 부탁드려요</option>
+                                <option value="">부재시 연락주세요</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                </div>
+
+                <button type="button" class="receiver-add">받는분 추가하기</button>
+                <div class="etc-line"></div>
+                <fieldset class="form-buy">
+                    <legend>주문결재</legend>
+                    <div class="buy-total">
+                        <label for="inpTotal" class="total-lab">총 결제 금액</label>
+                        <input type="text" id="inpTotal" class="inp-total" value="99,999,999원" disabled>
+                    </div>
+                    <label for="selectWay" class="buy-way">결제방식</label>
+                    <div class="sel-cont">
+                        <select id="selectWay" class="sel-common">
+                            <option value="">계좌이체</option>
+                            <option value="">신용카드</option>
+                            <option value="">무통장입금</option>
+                        </select>
+                    </div>
+                    <label for="inpDepositor" class="buy-name">입금자명</label>
+                    <input type="text" id="inpDepositor" class="inp-common" placeholder="보내는 분과 입금자명이 다를 경우 입력해주세요.">
+
+                    <button type="button" class="buy-account">
+                        <div class="account-info">
+                            <em class="account-tit">계좌번호 <span>(예금주명:백두산)</span></em>
+                            <strong>국민은행 444-55-66666-777</strong>
+                        </div>
+                        <span class="account-btn">계좌 복사</span>
+                    </button>
+
+                </fieldset>
+            </form>
+            <button type="button" class="bg-icon_modal_off">결재 창 닫기</button>
+        </section>
+    </article>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            // 슬라이더 설정
+            $('.header-item .owner-list-item').slick({
+                autoplay: false,
+                dots: false
+            });
+
+            // 더보기 버튼
+            const btnMore = document.querySelector('.info-more');
+            const bgShadow = document.querySelector('.bg-shadow');
+            const mainBody = document.querySelector('#mainOrder body');
+            let moreCheck = false; // 더보기 버튼을 눌렀는지 기억
+
+            btnMore.addEventListener('click', (event) => {
+                console.log(moreCheck);
+                if (!moreCheck) {
+                    mainBody.style.height = 'auto';
+                    bgShadow.classList.add('off');
+                    btnMore.classList.add('on');
+                    event.currentTarget.innerText = "상품 정보 접기";
+                    moreCheck = true;
+                } else {
+                    mainBody.style.height = '1250px';
+                    bgShadow.classList.remove('off');
+                    event.currentTarget.innerText = "더보기";
+                    moreCheck = false;
+                }
+            });
+
+            //  상품정보 네비게이션 
+            const itemNav = document.querySelector('.item-nav');
+            const arrItem = itemNav.querySelectorAll('button');
+            const itemInfo = document.querySelector('.item-info');
+            const itemBuy = document.querySelector('.item-buy');
+            const itemPolicy = document.querySelector('.item-policy');
+
+            // nodelist 를 array 로 변환
+            let arrItemParse = Array.prototype.slice.call(arrItem);
+
+            itemNav.addEventListener('click', (event) => {
+                const arrItems = arrItemParse.concat([itemInfo, itemBuy, itemPolicy]);
+                arrItems.forEach((item) => {
+                    item.classList.remove('on');
+                });
+                event.target.classList.add('on');
+
+                // 더보기 버튼이 이미 눌렸는지 체크 및 상태 초기화
+                if (!moreCheck) {
+                    mainBody.style.height = 'auto';
+                }
+
+                bgShadow.classList.add('off');
+                btnMore.classList.remove('on');
+
+                if (event.target.classList.contains('nav-info')) {
+                    btnMore.style.display = "block";
+                    if (!moreCheck) {
+                        mainBody.style.height = '1250px';
+                        bgShadow.classList.remove('off');
+                        btnMore.classList.remove('on');
+                    } else {
+                        btnMore.classList.add('on');
+                    }
+
+                    itemInfo.classList.add('on');
+                } else if (event.target.classList.contains('nav-buy')) {
+                    itemBuy.classList.add('on');
+                    btnMore.style.display = "none";
+                } else if (event.target.classList.contains('nav-policy')) {
+                    itemPolicy.classList.add('on');
+                    btnMore.style.display = "none";
+                }
+            });
+
+
+            // 판매 상품 갯수 체크
+            const itemOther = document.querySelector('.owner-list-other');
+            const arrItemOther = itemOther.querySelectorAll('li');
+            const ownerOther = document.querySelector('.owner-other');
+
+            if (arrItemOther.length == 2) {
+                itemOther.classList.add('hasTwo');
+            } else if (arrItemOther.length == 1) {
+                itemOther.classList.add('hasOne');
+            } else if (arrItemOther.length < 1) {
+                ownerOther.remove();
+            }
+
+            // 위로가기 버튼
+            const btnTop = document.querySelector('.bg-icon_top');
+
+            document.addEventListener('scroll', function (e) {
+                if (scrollY > 300) {
+                    btnTop.classList.add('on');
+                } else if (scrollY < 50) {
+                    btnTop.classList.remove('on');
+                }
+            });
+
+            btnTop.addEventListener('click', () => {
+                scroll(0, 0);
+            });
+
+            // 결재 팝업 관련 이벤트
+            const btnBuy = document.querySelector('.item-btn-buy');
+            const buyModal = document.querySelector('.modal-order');
+            const btnModalClose = document.querySelector('.bg-icon_modal_off');
+
+            // 모달 온 버튼 임시
+            btnBuy.addEventListener('click', (event) => {
+                buyModal.classList.toggle('on');
+            });
+            btnModalClose.addEventListener('click', (event) => {
+                buyModal.classList.remove('on');
+            });
+
+            // 받는분 추가
+            const addReceiver = document.querySelector('.receiver-add');
+            const formCont = document.querySelector('.form-cont');
+            addReceiver.addEventListener('click', () => {
+                const formReceiver = formCont.querySelectorAll('.form-receiver');
+                let newReceiver = document.createElement('fieldset');
+                newReceiver.className = "form-receiver added";
+                newReceiver.innerHTML = `<legend>
+                            받는 분 <span class="txt-number">&#40;&#43;<em>${formReceiver.length}</em>&#41;</span><button type="button"
+                                class="bg-icon_remove_item">받는분
+                                제거</button>
+                        </legend>
+                        <label for="selectItem" class="screen-out">상품 선택하기</label>
+                        <div class="sel-cont sel-item">
+                            <select id="selectItem" class="sel-common">
+                                <option selected disabled value="" class="init">상품 선택하기</option>
+                                <option value="">감귤 10kg</option>
+                                <option value="">감귤 20kg</option>
+                                <option value="">감귤 30kg</option>
+                            </select>
+                        </div>
+
+                        <div class="receiver-item">
+                            <label for="itemInfo">상품명 &#47; 999kg</label>
+                            <div class="item-order">
+                                <input type="text" id="itemInfo" value="99,000,000원" disabled>
+                                <div class="order-counter">
+                                    <button type="button" class="bg-icon_minus">빼기</button>
+                                    <em class="order-count">999</em>
+                                    <button type="button" class="bg-icon_plus">더하기</button>
+                                    <button type="button" class="bg-icon_init">초기화</button>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="text" id="inpNameReceiv" class="inp-common" placeholder="이름(필수)">
+                        <label for="inpNameReceiv" class="screen-out">이름(필수)</label>
+                        <input type="tel" id="inpPhoneReceiv" class="inp-common" placeholder="연락처(필수)">
+                        <label for="inpPhoneReceiv" class="screen-out">연락처(필수)</label>
+                        <input type="text" id="inpAddrReceiv" class="inp-common" placeholder="도로명, 건물명, 또는 지번으로 검색">
+                        <label for="inpAddrReceiv" class="screen-out">도로명, 건물명, 지번 주소</label>
+                        <input type="text" id="inpAddrDetail" class="inp-common" placeholder="상세주소">
+                        <label for="inpAddrDetail" class="screen-out">상세주소</label>
+                        <label for="selectMsg" class="screen-out">배송시 요청사항</label>
+                        <div class="sel-cont">
+                            <select id="selectMsg" class="sel-common">
+                                <option selected disabled>배송시 요청사항(선택)</option>
+                                <option value="">경비실에 부탁드려요</option>
+                                <option value="">집앞에 부탁드려요</option>
+                                <option value="">부재시 연락주세요</option>
+                            </select>
+                        </div>`;
+                formCont.appendChild(newReceiver);
+
+                // 받는분 제거
+                newReceiver.querySelector('.bg-icon_remove_item').addEventListener('click', () => {
+                    newReceiver.remove();
+                })
+
+            });
+        });
+    </script>
+</body>
+
+</html>

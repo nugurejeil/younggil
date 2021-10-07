@@ -1,0 +1,151 @@
+@charset 'utf-8';
+
+img{
+	display: block;
+}
+/*텍스트 숨김*/
+.screen-out{
+    overflow:hidden;
+    position:absolute;
+    width:0;
+    height:0;
+    line-height:0;
+    text-indent:-9999px;
+}
+/*텍스트 한줄 말줄임*/
+.text-ellipsis{
+	overflow:hidden; 
+	text-overflow:ellipsis; 
+	white-space:nowrap;
+}
+/*텍스트 두줄 말줄임*/
+.text-ellipsis2{
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+line-height: 35px;
+max-height: 70px;
+}
+.tit-section{
+    font-size: 20px;
+    font-weight: 700;
+    color:#191919;
+    margin-bottom:16px;
+}
+/* 아이콘 공통 */
+[class^="bg-icon"]{
+    background:url('../images/img_sprites.png');
+}
+/* 아이콘 이미지 주소 모음 */
+.bg-icon_account_copy {
+    width: 24px; height: 24px;
+    background-size: 170px 156px;
+    background-position: -5px -75px;
+}
+.bg-icon_add_item {
+    width: 12px; height: 12px;
+    background-size: 170px 156px;
+    background-position:-53px -139px;
+}
+.bg-icon_arrow_link {
+    width: 7px; height: 12px;
+    background-size: 170px 156px;
+    background-position:-75px -139px;
+}
+.bg-icon_arrow_right_blue {
+    width: 7px; height: 12px;
+    background-size: 170px 156px;
+    background-position:-92px -139px;
+}
+.bg-icon_arrow_slider {
+    width: 12px; height: 20px;
+    background-size: 170px 156px;
+    background-position:-145px -62px;
+}
+.bg-icon_arrow_under {
+    width: 10px; height: 5px;
+    background-size: 170px 156px;
+    background-position:-109px -139px;
+}
+.bg-icon_check_off {
+    width: 14px; height: 12px;
+    background-size: 170px 156px;
+    background-position:-5px -139px;
+}
+.bg-icon_checkbox_off {
+    width: 20px; height: 20px;
+    background-size: 170px 156px;
+    background-position:-73px -75px;
+}
+.bg-icon_check_on {
+    width: 14px; height: 12px;
+    background-size: 170px 156px;
+    background-position:-29px -139px;
+}
+.bg-icon_checkbox_on {
+    width: 20px; height: 20px;
+    background-size: 170px 156px;
+    background-position:-103px -75px;
+}
+.bg-icon_init {
+    width: 13px; height: 13px;
+    background-size: 170px 156px;
+    background-position:-145px -116px;
+}
+.bg-icon_massorder {
+    width: 20px; height: 20px;
+    background-size: 170px 156px;
+    background-position:-5px -109px;
+}
+.bg-icon_minus {
+    width: 20px; height: 20px;
+    background-size: 170px 156px;
+    background-position:-35px -109px;
+}
+.bg-icon_modal_off {
+    width: 14px; height: 14px;
+    background-size: 170px 156px;
+    background-position:-145px -92px;
+}
+.bg-icon_order {
+    width: 60px; height: 60px;
+    background-size: 170px 156px;
+    background-position:-5px -5px;
+}
+.bg-icon_plus {
+    width: 20px; height: 20px;
+    background-size: 170px 156px;
+    background-position:-65px -109px;
+}
+.bg-icon_remove_item {
+    width: 20px; height: 20px;
+    background-size: 170px 156px;
+    background-position:-95px -109px;
+}
+.bg-icon_remove {
+    width: 20px; height: 20px;
+    background-size: 170px 156px;
+    background-position:-145px -5px;
+}
+.bg-icon_search {
+    width: 24px; height: 24px;
+    background-size: 170px 156px;
+    background-position:-39px -75px;
+}
+.bg-icon_share {
+    width: 15px; height: 17px;
+    background-size: 170px 156px;
+    background-position:-145px -35px;
+}
+.bg-icon_top {
+    width: 60px; height: 60px;
+    background-size: 170px 156px;
+    background-position:-75px -5px;
+}
+.bg-icon_arrow_back {
+    width: 9px; height: 16px;
+    background-size: 170px 156px;
+    background-position:-125px -109px;
+}

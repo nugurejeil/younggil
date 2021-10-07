@@ -1,0 +1,209 @@
+@charset 'utf-8';
+.header-cert{
+    position: relative;
+    padding:13px 24px;
+}
+.header-cert .bg-icon_arrow_back{
+    position:absolute;
+    top:50%;
+    margin-top:-8px;
+    left:24px;
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    color:transparent;
+}
+.header-cert .cert-tit{
+    text-align: center;
+}
+
+.main-cert{
+    border-top:8px solid #F2F2F2;
+    padding:24px 16px;
+}
+.main-cert .cert-txt{
+    margin-bottom:12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #4F4F4F;
+}
+
+.main-cert .cert-btn{
+    width:100%;
+    background-color: #fff;
+    border:1px solid rgba(158, 158, 158, 0.4);
+    padding:13px 0;
+    margin-bottom:14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: rgba(158, 158, 158, 0.4);
+    border-radius: 8px;
+}
+.main-cert .cert-btn::before{
+    display: inline-block;
+    content:'';
+    width: 14px; height: 12px;
+    margin-right:8px;
+    background:url('../images/img_sprites.png');
+}
+.main-cert .cert-btn::before{
+    background-size: 170px 156px;
+    background-position:-5px -139px;
+}
+.main-cert .cert-btn.on{
+    border:1px solid #2E3E80;
+    color: #2E3E80
+}
+.main-cert .cert-btn.on::before{
+    background-size: 170px 156px;
+    background-position:-29px -139px;
+}
+.cert-form .form-agree{
+    margin-bottom:27px;
+}
+.form-list li+li{
+    margin-top:9px;
+}
+.form-list .lab-service, .form-list .lab-private{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color:rgba(158, 158, 158, 0.4);;
+}
+.form-list #inpService:checked+.lab-service, .form-list #inpPrivate:checked+.lab-private{
+    color:#4F4F4F;
+}
+
+.form-list .lab-service::before, .form-list .lab-private::before{
+    content:'';
+    float:left;
+    width: 20px; height: 20px;
+    margin-right:14px;
+    background:url('../images/img_sprites.png');
+}
+.form-list .lab-service::before, .form-list .lab-private::before{
+    background-size: 170px 156px;
+    background-position:-73px -75px;
+}
+.form-list #inpService:checked+.lab-service::before, .form-list #inpPrivate:checked+.lab-private::before{
+    background-size: 170px 156px;
+    background-position:-103px -75px;
+}
+.form-list .link-service, .form-list .link-private{
+    float:right;
+    width:20px;
+
+}
+.form-list .bg-icon_arrow_link{
+    float:right;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.form-certi > [class^="form"]{
+    margin-bottom:12px;
+}
+.form-certi label{
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    color:#191919;
+}
+
+.form-certi .certi-inpName{
+    width:100%;
+    margin-bottom:7px;
+    border:none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color:#4F4F4F;
+}
+
+.form-certi .form-name-cont{
+    border-bottom:1px solid #9E9E9E;
+}
+
+.form-certi .form-phone-cont{
+    display: flex;
+    justify-content: space-between;
+}
+.form-phone-cont .phone-cont{
+    width:calc(100% - 76px);
+    border-bottom:1px solid #9E9E9E;
+}
+.phone-cont .certi-inpPhone{
+    width:100%;
+    border:none;
+    margin-bottom:7px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color:#4F4F4F;
+}
+.form-phone-cont .phone-req{
+    width: 64px;
+    height: 28px;
+    margin-left:12px;
+    background: #298FC2;
+    color:#fff;
+    border-radius: 4px;
+}
+.form-certi .form-num-cont{
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom:24px;
+    align-items: center;
+    border-bottom:1px solid #9E9E9E;
+}
+.form-num-cont .inp-num{
+    border:none;
+    margin-bottom:7px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color:#4F4F4F;
+}
+.form-num-cont .bg-icon_remove{
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size:1px;
+    line-height: 1px;
+    color:transparent;
+}   
+.form-num-cont .num-util{
+    display: flex;
+    align-items: center;
+}
+.form-num-cont .num-time{
+    margin-left:6px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #FF5630;
+}
+
+.cert-notice{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #4F4F4F;
+}
+.cert-notice::before{
+    display: inline-block;
+    content:'\b7\a0';
+}
+
+.footer-cert .btn-finish{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:48px;
+    background-color: #2E3E80;
+    color:#fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+}

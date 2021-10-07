@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>휴대폰 본인인증</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/certification.css">
+</head>
+
+<body>
+    <header class="header-cert">
+        <a href="#none" class="bg-icon_arrow_back"> 뒤로가기</a>
+        <h1 class="cert-tit">휴대폰 본인인증</h1>
+    </header>
+    <main class="main-cert">
+        <p class="cert-txt">주문내역 및 조회진행을 위해 본인인증이 필요합니다.</p>
+        <button type="button" class="cert-btn">본인확인 서비스 이용약관 전체 동의</button>
+        <form action="" class="cert-form">
+            <fieldset class="form-agree">
+                <legend class="screen-out">약관동의 체크</legend>
+                <ul class="form-list">
+                    <li>
+                        <input type="checkbox" id="inpService" class="screen-out">
+                        <label for="inpService" class="lab-service">(필수) 서비스 이용약관</label>
+                        <a href="#none" class="link-service"><span class="bg-icon_arrow_link">서비스 이용약관으로 이동</span></a>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="inpPrivate" class="screen-out">
+                        <label for="inpPrivate" class="lab-private">(필수) 개인정보 수집 및 이용 동의</label>
+                        <a href="#none" class="link-private"><span class="bg-icon_arrow_link">개인정보 수집 및 이용 동의로
+                                이동</span></a>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="form-certi">
+                <legend class="screen-out">사용자 인증</legend>
+                <div class="form-name-cont">
+                    <label for="inpName">이름</label>
+                    <input type="text" id="inpName" class="certi-inpName" placeholder="보내는 분 이름 입력">
+                </div>
+                <label for="inpPhone">휴대폰 번호</label>
+                <div class="form-phone-cont">
+                    <div class="phone-cont">
+                        <input type="tel" id="inpPhone" class="certi-inpPhone" placeholder="보내는 분 휴대폰 번호 (숫자만 입력)">
+                    </div>
+                    <button type="button" class="phone-req">인증요청</button>
+                </div>
+                <div class="form-num-cont">
+                    <label for="inpNum" class="screen-out">인증 번호</label>
+                    <input type="number" id="inpNum" class="inp-num" placeholder="인증 번호 입력">
+                    <div class="num-util">
+                        <button type="button" class="bg-icon_remove">삭제</button>
+                        <time class="num-time">03:00</time>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <p class="cert-notice">보내는 분 본인의 이름과 휴대폰 번호로 인증해주세요.</p>
+        <p class="cert-notice">주문내역 조회는 보내는 분 이름과 휴대폰 번호로만 조회 가능 합니다.</p>
+    </main>
+    <footer class="footer-cert">
+        <button type="button" class="btn-finish">인증완료</button>
+    </footer>
+    <script>
+        // 전체 동의 버튼 이벤트
+        const certBtn = document.querySelector('.cert-btn');
+        const formListInp = document.querySelectorAll('.form-list input');
+        let arrCheck = [false, false];
+        certBtn.addEventListener('click', (event) => {
+            event.currentTarget.classList.toggle('on');
+            if (event.currentTarget.classList.contains('on')) {
+                formListInp.forEach((item) => {
+                    item.checked = true;
+                });
+            } else {
+                formListInp.forEach((item) => {
+                    item.checked = false;
+                });
+            }
+        });
+
+        for (let i = 0; i < formListInp.length; i++) {
+            formListInp[i].addEventListener('click', (event) => {
+                if (!event.currentTarget.checked) {
+                    certBtn.classList.remove('on');
+                }
+                if (formListInp[0].checked && formListInp[1].checked) {
+                    certBtn.classList.add('on');
+                }
+            });
+        }
+        // formListInp.forEach((item) => {
+        //     item.addEventListener('click', (event) => {
+        //         if (!event.currentTarget.checked) {
+        //             certBtn.classList.remove('on');
+        //         }
+        //     });
+        // });
+
+
+
+
+    </script>
+</body>
+
+</html>
