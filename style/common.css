@@ -149,3 +149,23 @@ max-height: 70px;
     background-size: 170px 156px;
     background-position:-125px -109px;
 }
+
+/* 헤더 공통 스타일 */
+.header-cert{
+    position: relative;
+    padding:13px 24px;
+}
+.header-cert .bg-icon_arrow_back{
+    position:absolute;
+    top:50%;
+    margin-top:-8px;
+    left:24px;
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    color:transparent;
+}
+.header-cert .cert-tit{
+    text-align: center;
+}

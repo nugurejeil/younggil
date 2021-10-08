@@ -1,23 +1,4 @@
 @charset 'utf-8';
-.header-cert{
-    position: relative;
-    padding:13px 24px;
-}
-.header-cert .bg-icon_arrow_back{
-    position:absolute;
-    top:50%;
-    margin-top:-8px;
-    left:24px;
-    overflow: hidden;
-    text-indent: -9999px;
-    font-size: 0;
-    line-height: 0;
-    color:transparent;
-}
-.header-cert .cert-tit{
-    text-align: center;
-}
-
 .main-cert{
     border-top:8px solid #F2F2F2;
     padding:24px 16px;
