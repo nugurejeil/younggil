@@ -151,11 +151,11 @@ max-height: 70px;
 }
 
 /* 헤더 공통 스타일 */
-.header-cert{
+.header-common{
     position: relative;
     padding:13px 24px;
 }
-.header-cert .bg-icon_arrow_back{
+.header-common .bg-icon_arrow_back{
     position:absolute;
     top:50%;
     margin-top:-8px;
@@ -166,6 +166,52 @@ max-height: 70px;
     line-height: 0;
     color:transparent;
 }
-.header-cert .cert-tit{
+.header-common .cert-tit{
     text-align: center;
+}
+
+/* 계좌 정보 공통 스타일 */
+.buy-account{
+    display: flex;
+    justify-content: space-between;
+    height:80px;
+    width:100%;
+    margin-top:24px;
+    padding:16px 12px;
+    border-radius: 8px;
+}
+.buy-account .account-info strong{ 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #2E3E80;
+    
+}
+.buy-account .account-info .account-tit{
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.buy-account .account-info .account-tit span{
+    font-weight: 400;
+}
+
+.buy-account .account-btn{
+    width:53px;
+    height:100%;
+    padding:0 8px;
+    border-left:1px solid #E9E9E9;
+}
+.buy-account .account-btn::before{
+    display: block;
+    content:'';
+    width: 24px; height: 24px;
+    margin:0 auto 3px;
+    background:url('../images/img_sprites.png');
+}
+.buy-account .account-btn::before{
+    background-size: 170px 156px;
+    background-position: -5px -75px;
 }
