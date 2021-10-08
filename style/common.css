@@ -7,10 +7,11 @@ img{
 .screen-out{
     overflow:hidden;
     position:absolute;
-    width:0;
-    height:0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
     line-height:0;
-    text-indent:-9999px;
+    text-indent:-9999px;  
 }
 /*텍스트 한줄 말줄임*/
 .text-ellipsis{
@@ -25,8 +26,8 @@ text-overflow: ellipsis;
 display: -webkit-box;
 -webkit-box-orient: vertical;
 -webkit-line-clamp: 2;
-line-height: 35px;
-max-height: 70px;
+line-height: 1.5em;
+max-height: 3em;
 }
 .tit-section{
     font-size: 20px;
@@ -174,11 +175,11 @@ max-height: 70px;
 .buy-account{
     display: flex;
     justify-content: space-between;
-    height:80px;
     width:100%;
     margin-top:24px;
     padding:16px 12px;
     border-radius: 8px;
+    background-color:#F2F2F2
 }
 .buy-account .account-info strong{ 
     font-weight: 700;
