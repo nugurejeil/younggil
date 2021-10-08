@@ -498,11 +498,11 @@
 }
 .receiver-item .item-order{
     overflow: hidden;
-    height:30px;
+    display: flex;
+    justify-content: space-between;
     margin-top:8px;
 }
 .receiver-item .item-order input{
-    float:left;
     width:50%;
     font-size: 20px;
     line-height: 29px;
@@ -514,8 +514,6 @@
 .receiver-item .order-counter{
     display: flex;
     align-items: center;
-    float:right;
-    height:100%;
 }
 .receiver-item .order-counter button{
     overflow: hidden;
