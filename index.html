@@ -252,7 +252,7 @@
                     <legend>주문결재</legend>
                     <div class="buy-total">
                         <label for="inpTotal" class="total-lab">총 결제 금액</label>
-                        <input type="text" id="inpTotal" class="inp-total" value="99,999,999원" disabled>
+                        <input type="text" id="inpTotal" class="inp-total" value="99,999,999원" readonly>
                     </div>
                     <label for="selectWay" class="buy-way">결제방식</label>
                     <div class="sel-cont">
@@ -394,9 +394,13 @@
             // 모달 온 버튼 임시
             btnBuy.addEventListener('click', (event) => {
                 buyModal.classList.toggle('on');
+                document.body.style.position = 'fixed';
+                document.body.style.top = `-${window.scrollY}px`;
             });
             btnModalClose.addEventListener('click', (event) => {
                 buyModal.classList.remove('on');
+                document.body.style.position = '';
+                document.body.style.top = '';
             });
 
             // 받는분 추가
@@ -424,7 +428,7 @@
                         <div class="receiver-item">
                             <label for="itemInfo">상품명 &#47; 999kg</label>
                             <div class="item-order">
-                                <input type="text" id="itemInfo" value="99,000,000원" disabled>
+                                <input type="text" id="itemInfo" value="99,000,000원" readonly>
                                 <div class="order-counter">
                                     <button type="button" class="bg-icon_minus">빼기</button>
                                     <em class="order-count">999</em>
